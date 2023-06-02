@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500;700&display=swap');
+
+.asd {
+    color: #6e2a68;
+    /*Расположение текста*/
+    text-align: center;
+    /*em это больше/меньше относительно значения по умолчанию*/
+    font-size: 2em;
+    /*Стиль текста*/
+    font-style: normal;
+    /*Насколько жирный текст*/
+    font-weight:600;
+    /*Сам шрифт*/
+    font-family:'Roboto Mono', sans-serif;
+    /*Весь текст с маленькой буквы или с большой и тд*/
+    text-transform:lowercase;
+    /*Простанство между словами*/
+    word-spacing: 2px;
+    /*Между символами*/
+    letter-spacing: 0px;
+    /*Расстояние между строками*/
+    line-height: 40px;
+    text-decoration: underline;
+    cursor: pointer;
+}

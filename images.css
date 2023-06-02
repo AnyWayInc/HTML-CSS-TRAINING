@@ -1,0 +1,19 @@
+#some_id{
+    /*background-color:rgb(77, 112, 146);
+    color: rgb(85, 52, 102);
+    background-image: url(https://wallup.net/wp-content/uploads/2019/09/317485-green-field-17854-3840x2160.jpg);
+    background-repeat: no-repeat;
+    background-position: center;*/
+
+    color: rgb(85, 52, 102);
+    background: rgb(77, 112, 146) url(https://wallup.net/wp-content/uploads/2019/09/317485-green-field-17854-3840x2160.jpg) 
+    no-repeat center top;
+    height: 500px;
+    background-size: cover;
+    /*Фиксирует картинку на 1 месте*/
+    background-attachment: fixed;
+}
+
+#second {
+    height: 2000px;
+}

@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#some_id, .block{
+    background:red;
+    height: 200px;
+    width: 300px;
+    /*solid сплошная обводка*/
+    border: 7px solid silver;
+    border-bottom: 0;
+    border-top-style: dashed;
+    border-width: 8px;
+    border-style:double;
+    border-radius: 50px 30px;
+    opacity: 0.5;
+    /*Внешние отступы (вне объекта)*/
+    margin: 10px;
+    /*Внутренние отступы*/
+    padding: 30px 10px 0px 40px;
+    /*Описывает что будет из себя представлять схожий объект*/
+    display:block;
+}

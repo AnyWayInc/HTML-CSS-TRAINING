@@ -1,0 +1,117 @@
+/* *{
+    margin: 0;
+    padding: 0;
+}
+
+.block{
+    width:200px;
+    height:200px;
+    margin: 20px;
+    background: yellow;
+}
+
+#some_id{
+    /*Элемент слева а справа его могут обтекать другие объекты*/
+    /*Другие блоки по умолчанию становятся такими же*/
+    /*float: left;
+}*/
+/*
+#second{
+    float: left;
+    background:purple;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#some_block{
+    background: red;
+    color: white;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    /*Абсолютное позиционирование относительно самого экрана*/
+    /* position: absolute; */
+    /*Зафиксирован в 1 позиции и как бы ты не скролил он будет в 1 точке*/
+    position: fixed;
+    border-radius: 50%;
+    left: 20px;
+    top: 0px;
+}
+
+#header,#footer {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    border-bottom: 4px solid silver;
+    background: #333;
+    color:white;
+    float:left;
+    /*Текст по центру так как height = 50*/
+    line-height: 70px;
+    margin-bottom: 50px;
+}
+
+#nav{
+    /*Нету стиля списка*/
+    list-style: none;
+    display: block;
+    width: 50%;
+    margin-bottom: 50px;
+    text-align: center;
+    margin-left: 25%;
+}
+
+#nav li{
+    display: inline;
+    background: #fafafa;
+    border: 1px solid silver;
+    padding: 0 20px;
+}
+
+#nav li:hover{
+    color: #fff;
+    background: #333;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#nav li:not(:last-of-type){
+    margin-right: 20px;
+}
+
+#main{
+    float:left;
+    width: 50%;
+    margin-left: 10%;
+    background: #fafafa;
+    border: 1px solid silver;
+    padding: 20px 2.5%;
+    position: relative;
+    z-index: 1;
+}
+
+#aside{
+    width: 20%;
+    padding: 20px 2.5%;
+    background: #fafafa;
+    border: 1px solid silver;
+    float:left;
+    margin-left: 5%;
+    /*Позиция объекта относительно объектов рядом*/
+    position: relative;
+    bottom: 0px;
+    left: -200px;
+    /*Находится под объектом если -1 и над ним если 1,2,3,4 и тд*/
+    z-index: 2;
+}
+
+#footer{
+    margin-bottom: 0;
+    margin-top: 50px;
+    border-bottom: 0;
+    border-top:4px solid silver ;
+}

@@ -1,0 +1,81 @@
+/* Для всех кроме тех которые переопределяют*/
+p::first-of-type{
+    text-decoration: line-through;
+}
+
+/*Обращается к тем кто имеет класс text и не пустые*/
+p.text:not(empty){
+    color:red;
+}
+
+p.text:not(:empty)::after{
+    content: attr(title);
+    color:red;
+}
+
+/*Обращаемся к первому символу*/
+p.text::first-letter{
+    color: green;
+}
+
+/*After Обратимся к невидимой части находящеяся за объектом
+Before наоборот*/
+#some_id::before{
+    content: '123';
+    color: orange;
+    text-decoration: line-through;
+}
+
+.main-link{
+    color: red;
+    /*Подчеркивание ссылки или чего либо еще*/
+    text-decoration: none;
+}
+
+/*Стили при наведении на него*/
+.main-link::hover{
+    color:blueviolet;
+    text-decoration: underline;
+    text-decoration-color: red;
+    cursor: pointer;
+}
+
+/*После нажатия*/
+.main-link:active{
+    text-decoration: line-through;
+}
+
+/*После перехода на ссылку*/
+.main-link:visited {
+    color:cyan;
+}
+
+/*
+  Применяется к тем тэгам которые в данный момент не активны
+  Enable наоборот
+*/
+input:disabled{
+ color:aqua;
+}
+
+input{
+    color:blue;
+}
+
+/*Focus срабатывает тогда когда мы встаем в поле где вводим текст*/
+input:focus{
+    color:red;
+}
+
+
+.asd {
+  color: blueviolet;
+}
+
+b{
+    color: brown;
+}
+
+div p b{
+    color:green
+} 
